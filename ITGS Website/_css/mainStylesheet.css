@@ -1,29 +1,76 @@
+/* Main Colors
+	
+	White = #FFFFFF
+	Dark Green background = #016D47
+	Foreground green = #21A074
+	Warm Black/Brown = #333323
+
+	Yellow = #FFC75A
+	Dark Yellow gold = #CE8D0F
+	Darkest Yellow Gold = #A36C02
+
+	Slightly darker green = #0A8A5D
+	bright green = #66C8A5
+
+
+*/
+
 body {
 	background-color: #016D47;
 	color: #FFFFFF;
 	font-size:100%;
 }
 
-a {
-	text-decoration: none;
-	color: #EFAF32;
-	font-style: italic;
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.3em;
 }
 
 #topnav {
 	background-color: #21A074;
+	margin-bottom: -16px;
 }
 
 	#topnav ul li {
-		display: inline;
+		display: inline-block;
+		padding-right: 1.3em;
+		padding-left: .7em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		letter-spacing: .05em;
+	}
+
+	#topnav ul li:hover {
+		background-color: #333323;
+		text-shadow: 0.02em 0.02em #A36C02;
+	}
+
+	#topnav ul li a {
+		text-decoration: none;
+		color: #FFC75A;
+		text-transform: uppercase;
 	}
 
 #breadcrumbs {
-	background-color: #21A074;
+	background-color: #0A8A5D;
+	width: 70%;
 }
+	
+	#breadcrumbs ul li {
+		display: inline-block;
+	}
+
+	#breadcrumbs ul li a {
+		text-decoration: none;
+		color: #D59570;
+		font-style: italic;
+	}
 
 #leftcolumn {
-	background-color: #21A074;
+	background-color: #333323;
 	float: left;
 	margin-left: auto;
 	padding: 1% 1% 1% 1%;
@@ -41,7 +88,7 @@ a {
 }
 
 #rightcolumn {
-	background-color: #21A074;
+	background-color: #CE8D0F; /*#0A8A5D;*/
 	float: right;
 	margin-right: auto;
 	padding: 1% 1% 1% 1%;
