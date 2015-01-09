@@ -21,11 +21,18 @@ body {
 	font-size:100%;
 }
 
-h1 {
+h1 a {
 	font-size: 2em;
+	text-decoration: none;
+	color: #FFC75A;
+	margin-left: 5%;
 }
 
 h2 {
+	font-size: 2em;
+}
+
+h3 {
 	font-size: 1.3em;
 }
 
@@ -84,7 +91,7 @@ h2 {
 	background-color: #21A074;
 	padding: 1% 1% 1% 1%;
 	display: inline-block;
-	width: 70%%;
+	width: 70%;
 }
 
 #rightcolumn {
@@ -94,4 +101,14 @@ h2 {
 	padding: 1% 1% 1% 1%;
 	display: inline-block;
 	width: 10%;
+}
+
+#footer {
+	margin-left: 12%;
+	margin-right: auto;
+	background-color:#333323;
+	color: #CE8D0F;
+	padding: 1% 1% 3em 1%;
+	text-align: center;
+	width: 70%;
 }
