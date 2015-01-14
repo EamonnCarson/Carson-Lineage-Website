@@ -89,15 +89,15 @@ h3 {
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #21A074;
+	float:left;
 	padding: 1% 1% 1% 1%;
 	display: inline-block;
 	width: 70%;
 }
 
 #rightcolumn {
-	background-color: #CE8D0F; /*#0A8A5D;*/
+	background-color: #CE8D0F;
 	float: right;
-	margin-right: auto;
 	padding: 1% 1% 1% 1%;
 	display: inline-block;
 	width: 10%;
