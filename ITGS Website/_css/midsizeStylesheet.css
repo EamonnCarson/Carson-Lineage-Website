@@ -1,0 +1,134 @@
+/* Main Colors
+	
+	White = #FFFFFF
+	Dark Green background = #016D47
+	Foreground green = #21A074
+	Warm Black/Brown = #333323
+
+	Yellow = #FFC75A
+	Dark Yellow gold = #CE8D0F
+	Darkest Yellow Gold = #A36C02
+
+	Slightly darker green = #0A8A5D
+	bright green = #66C8A5
+*/
+
+@media screen and (min-width: 500px) and (max-width: 810px) {
+	body {
+		background-color: #016D47;
+		color: #FFFFFF;
+		font-size:100%;
+	}
+
+	h1 a {
+		font-size: 2em;
+		text-decoration: none;
+		color: #FFC75A;
+		margin-left: 5%;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.3em;
+	}
+
+	#topnav {
+		border-top-right-radius: 10px;
+		background-color: #21A074;
+		margin-bottom: -16px;
+	}
+
+		#topnav ul {
+			padding-left: 0em;
+		}
+
+		#topnav ul li {
+			display: inline-block;
+			padding-right: 1.3em;
+			padding-left: 1.3em;
+			padding-top: 1em;
+			padding-bottom: 1em;
+			letter-spacing: .05em;
+		}
+
+		#topnav ul li:hover {
+			background-color: #333323;
+			text-shadow: 0.06em 0.05em #A36C02;
+		}
+
+		#topnav ul li a {
+			text-decoration: none;
+			color: #FFC75A;
+			text-transform: uppercase;
+		}
+
+	#breadcrumbs {
+		background-color: #0A8A5D;
+		width: 70%;
+	}
+		
+		#breadcrumbs ul li {
+			display: inline-block;
+		}
+
+		#breadcrumbs ul li a {
+			text-decoration: none;
+			color: #D59570;
+			font-style: italic;
+		}
+
+		#breadcrumbs ul li a::after {
+			content: "  >  ";
+		}
+
+	#leftcolumn {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		background-color: #333323;
+		float: left;
+		margin-left: auto;
+		padding: 1% 1% 1% 2%;
+		display: inline-block;
+		width: 15%;
+	}
+		#leftcolumn ul {
+			list-style: none;
+			padding-left: 0em;
+		}
+
+		#leftcolumn ul li a {
+			color: #D59570;
+		}
+
+	#content {
+		border-top-right-radius: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #21A074;
+		float:left;
+		padding: 1% 1% 1% 1%;
+		display: inline-block;
+		width: 80%;
+	}
+
+	#rightcolumn {
+		display:none;
+	}
+
+	#footer {
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		float: left;
+		margin-left: 18%;
+		margin-right: auto;
+		background-color:#333323;
+		color: #CE8D0F;
+		padding: 1em 1% 3em 1%;
+		text-align: center;
+		height: 3em;
+		width: 80%;
+	}
+}
