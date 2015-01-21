@@ -13,7 +13,7 @@
 	bright green = #66C8A5
 */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
 	body {
 		background-color: #016D47;
 		color: #FFFFFF;
@@ -36,14 +36,19 @@
 	}
 
 	#topnav {
+		border-top-right-radius: 10px;
 		background-color: #21A074;
 		margin-bottom: -16px;
 	}
 
+		#topnav ul {
+			padding-left: 0em;
+		}
+
 		#topnav ul li {
 			display: inline-block;
 			padding-right: 1.3em;
-			padding-left: .7em;
+			padding-left: 1.3em;
 			padding-top: 1em;
 			padding-bottom: 1em;
 			letter-spacing: .05em;
@@ -75,7 +80,13 @@
 			font-style: italic;
 		}
 
+		#breadcrumbs ul li a::after {
+			content: "  >  ";
+		}
+
 	#leftcolumn {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
 		background-color: #333323;
 		float: left;
 		margin-left: auto;
@@ -93,6 +104,7 @@
 		}
 
 	#content {
+		border-top-right-radius: 10px;
 		margin-left: auto;
 		margin-right: auto;
 		background-color: #21A074;
@@ -109,8 +121,18 @@
 		display: inline-block;
 		width: 10%;
 	}
+		#rightcolumn ul {
+			list-style: none;
+			padding-left: 0em;
+		}
+
+		#rightcolumn ul li a {
+			color: #000000;
+		}
 
 	#footer {
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
 		float: left;
 		margin-left: 12%;
 		margin-right: auto;
