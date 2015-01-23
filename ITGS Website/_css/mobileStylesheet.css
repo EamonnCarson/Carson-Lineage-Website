@@ -20,6 +20,15 @@
 		font-size: 1.3em;
 	}
 
+	p {
+		font-size: 1em;
+	}
+
+	a {
+		color: #FFD583;
+		/*text-shadow: 0.06em 0.05em #A33602;*/
+	}
+
 	#topnav {
 		margin-bottom: -16px;
 	}

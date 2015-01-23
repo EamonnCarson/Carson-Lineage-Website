@@ -35,6 +35,19 @@
 		font-size: 1.3em;
 	}
 
+	p {
+		font-size: 1em;
+	}
+
+	a {
+		color: #FFD583;
+		/*text-shadow: 0.06em 0.05em #A33602;*/
+	}
+
+	a:hover{
+		color: #A36C02;
+	}
+
 	#topnav {
 		border-top-right-radius: 10px;
 		background-color: #21A074;
@@ -75,8 +88,10 @@
 		}
 
 		#breadcrumbs ul li a {
+			font-size: 01em;
 			text-decoration: none;
 			color: #D59570;
+			text-shadow: none;
 			font-style: italic;
 		}
 
@@ -99,10 +114,6 @@
 			padding-left: 0em;
 		}
 
-		#leftcolumn ul li a {
-			color: #D59570;
-		}
-
 	#content {
 		border-top-right-radius: 10px;
 		margin-left: auto;
@@ -115,7 +126,7 @@
 	}
 
 	#rightcolumn {
-		background-color: #CE8D0F;
+		background-color: #333323;
 		float: right;
 		padding: 1% 1% 1% 1%;
 		display: inline-block;
@@ -124,10 +135,6 @@
 		#rightcolumn ul {
 			list-style: none;
 			padding-left: 0em;
-		}
-
-		#rightcolumn ul li a {
-			color: #000000;
 		}
 
 	#footer {

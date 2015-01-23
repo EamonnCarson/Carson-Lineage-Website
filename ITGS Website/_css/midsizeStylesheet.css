@@ -35,6 +35,15 @@
 		font-size: 1.3em;
 	}
 
+	p {
+		font-size: 1em;
+	}
+
+	a {
+		color: #FFD583;
+		/*text-shadow: 0.06em 0.05em #A33602;*/
+	}
+
 	#topnav {
 		border-top-right-radius: 10px;
 		background-color: #21A074;
@@ -98,10 +107,6 @@
 		#leftcolumn ul {
 			list-style: none;
 			padding-left: 0em;
-		}
-
-		#leftcolumn ul li a {
-			color: #D59570;
 		}
 
 	#content {
