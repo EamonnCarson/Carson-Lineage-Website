@@ -29,7 +29,19 @@
 		/*text-shadow: 0.06em 0.05em #A33602;*/
 	}
 
+	#top {
+		background-color: #333323; 
+		color: #FFC75A;
+		font-size: 1em;
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
 	#topnav {
+		margin-top: -16px;
 		margin-bottom: -16px;
 	}
 
@@ -43,10 +55,6 @@
 			background-color: #21A074;
 			border: 1px solid #016D47;
 			display: block;
-			padding-right: 1.3em;
-			padding-left: .5em;
-			padding-top: .5em;
-			padding-bottom: .5em;
 			letter-spacing: .05em;
 		}
 
@@ -59,6 +67,15 @@
 			text-decoration: none;
 			color: #FFC75A;
 			text-transform: uppercase;
+			display:block;
+			padding-right: 1.3em;
+			padding-left: .5em;
+			padding-top: .5em;
+			padding-bottom: .5em;
+		}
+
+		.currentSelected {
+			background-color: #333323;
 		}
 
 	#breadcrumbs {

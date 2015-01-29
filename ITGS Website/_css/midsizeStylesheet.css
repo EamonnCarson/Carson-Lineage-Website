@@ -44,9 +44,23 @@
 		/*text-shadow: 0.06em 0.05em #A33602;*/
 	}
 
+	#top {
+		background-color: #333323; 
+		color: #FFC75A;
+		font-size: 1.5em;
+		padding-top: .1em;
+		padding-bottom: .1em;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0px;
+		text-align: center;
+		border-top-left-radius: 20;
+		border-top-right-radius: 20;
+	}
+
 	#topnav {
-		border-top-right-radius: 10px;
 		background-color: #21A074;
+		margin-top: -30px;
 		margin-bottom: -16px;
 	}
 
@@ -56,10 +70,6 @@
 
 		#topnav ul li {
 			display: inline-block;
-			padding-right: .5em;
-			padding-left: .5em;
-			padding-top: 1em;
-			padding-bottom: 1em;
 			letter-spacing: .05em;
 		}
 
@@ -73,6 +83,15 @@
 			color: #FFC75A;
 			text-transform: uppercase;
 			font-size: .8em;
+			display: block;
+			padding-right: .5em;
+			padding-left: .5em;
+			padding-top: 1em;
+			padding-bottom: 1em;
+		}
+
+		.currentSelected {
+			background-color: #333323;
 		}
 
 	#breadcrumbs {
