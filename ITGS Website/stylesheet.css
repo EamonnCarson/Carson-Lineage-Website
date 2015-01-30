@@ -10,19 +10,22 @@ ul {
 }
 
 #topnav {
+	z-index: 100;
 	background-color: black;
 	color: white;
 	width: 100%;
 }
 	#topnav > ul > li {
-		display: inline-block;
+		display: block;
 		position: relative;
 		float: right;
-		padding: 10 10 10 10;
 	}
 	#topnav a {
+		display: block;
 		color: white;
 		text-decoration: none;
+		margin: 0px;
+		padding: 10px;
 	}
 	#topnav > ul > li:hover {
 		background-color: #333333;
@@ -30,6 +33,7 @@ ul {
 
 	/*CSS menu */
 	#topnav > ul > li > ul {
+		z-index: 110;
 		display: none;
 		position: absolute;
 		background-color: #333333;
@@ -37,18 +41,26 @@ ul {
 		width: 150px;
 		top: 45px;
 		left: 0px;
+		margin: 0px;
+		padding: 0px;
 	}
-		#topnav ul > li:hover > ul, #topnav > ul > li > ul:hover {
+		#topnav ul > li:hover > ul{
 			display: block;
+			background-color: #333333;
 		}
 		#topnav > ul > li > ul > li {
-			padding: 10 10 10 10;
+
 		}
-		#topnav ul > li > ul > li:hover {
+		#topnav ul > li > ul > li > a {
+			display: block;
+			width: 130px;
+		}
+		#topnav ul > li > ul > li > a:hover {
 			background-color: #555555;
 		}
 
 #breadcrumbs {
+	z-index: 90;
 	display: block;
 	width: 100%;
 	background-color: white;
@@ -71,12 +83,9 @@ ul {
 #content {
 	display: block;
 	width: 100%;
-	background-color: gray;
-	padding: 20px 20px 20px 20px;
-}/*
-	#content p, #content h2 {
-		margin: 0px;
-	}*/
+	background-color: white;
+	padding: 20px 0px 20px 0px;
+}
 
 #footer {
 	background-color: black;
