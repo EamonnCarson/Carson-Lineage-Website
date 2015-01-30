@@ -1,0 +1,8 @@
+@media only screen and (min-width: 1000px) {
+	#topnav #searchbutton, #topnav #menubutton {
+		display: none;
+		color: white;
+		margin: 0px;
+		padding: 10px;
+	}
+}

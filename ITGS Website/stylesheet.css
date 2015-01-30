@@ -28,7 +28,7 @@ body {
 		padding: 10px;
 	}
 	#topnav #searchbar, #topnav #searchbutton, #topnav #menubutton {
-		display: none;
+		display: block;
 		color: white;
 		margin: 0px;
 		padding: 10px;
