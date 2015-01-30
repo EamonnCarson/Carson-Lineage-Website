@@ -4,26 +4,32 @@ body {
 	background-color: black;
 }
 
-ul {
-	list-style-type: none;
-	padding-left: 0px;
-}
-
 #topnav {
 	z-index: 100;
 	background-color: black;
 	color: white;
 	width: 100%;
 }
+	#topnav > ul {
+		float: right;
+		margin: 0px;
+		padding: 0px;
+	}
 	#topnav > ul > li {
 		display: block;
+		float: left;
 		position: relative;
-		float: right;
 	}
 	#topnav a {
 		display: block;
 		color: white;
 		text-decoration: none;
+		margin: 0px;
+		padding: 10px;
+	}
+	#topnav #searchbar, #topnav #searchbutton, #topnav #menubutton {
+		display: none;
+		color: white;
 		margin: 0px;
 		padding: 10px;
 	}
@@ -86,6 +92,10 @@ ul {
 	background-color: white;
 	padding: 20px 0px 20px 0px;
 }
+
+	#content > * {
+		margin: 10px 30px 10px 30px;
+	}
 
 #footer {
 	background-color: black;
