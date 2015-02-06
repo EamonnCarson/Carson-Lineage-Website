@@ -12,40 +12,9 @@
 	<link rel="stylesheet" type="text/css" href="/css/mobileStylesheet.css" />
 </head>
 <body>
-	<div id="top">
-	</div>
-	<div id="topnav" class="float-clearing">
-		<ul>
-			<li class="float-clearing"><a href="/index.html">Home</a></li>
-			<li><a href="/pages/testimonials/index.html">Testimonials</a>
-				<ul>
-					<li><a href="/pages/testimonials/english.html">English</a></li>
-					<li><a href="/pages/testimonials/japanese.html">日本語</a></li>
-					<li><a href="/pages/testimonials/chinese.html">普通话</a></li>
-				</ul>
-			</li>
-			<li><a href="/pages/buddhist-stories/index.html">Buddhist Stories</a></li>
-			<li><a href="/pages/schedules/index.html">Schedules</a>
-				<ul>
-					<li><a href="/pages/schedules/gohoshi.html">Gohoshi</a></li>
-					<li><a href="/pages/schedules/winter-training.html">Winter Training</a></li>
-				</ul>
-			</li>
-			<li><a href="/pages/information/index.html">Information</a>
-				<ul>
-					<li><a href="/pages/information/about-us.html">About Us</a></li>
-				</ul>
-			</li>
-			<li id="searchbar">Search bar</li>
-			<li id="searchbutton">Search</li>
-			<li id="menubutton">Menu</li>
-		</ul>
-	</div>
-	<div id="breadcrumbs">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-		</ul>
-	</div>
+	<!--Includes the navbar file-->
+	<?php require $_SERVER['DOCUMENT_ROOT'] . "/header.html";?>
+
 	<div id="content">
 		<h2>Welcome</h2>
 			<p>Welcome to the Carson Lineage website. On this site you can view the <a href="TODO">Testimonials</a> from members of our lineage, read translated <a href="TODO">Shinnyo Texts</a>, see <a href="TODO">Temple Guidelines</a> and information, and check the schedules for <a href="TODO">Gohoshi</a>, <a href="TODO">Winter Training</a>, and other <a href="TODO">Shinyo activities</a>.</p>
@@ -61,10 +30,9 @@
 				</ul>
 			</p>
 	</div>
-	<div id="footer">
-		<p>Contact us at kacarson@pacbell.net</p>
-		<p>Copyright Eamonn Carson 2017</p>
-		<p><a href="#top">Back to the top</a><p>
-	</div>
+
+	<!--Includes the footer file-->
+	<?php require $_SERVER['DOCUMENT_ROOT'] . "/footer.html";?>
+
 </body>
 </html>
