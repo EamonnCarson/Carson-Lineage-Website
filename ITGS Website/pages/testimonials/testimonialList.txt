@@ -1,0 +1,28 @@
+Akiko, 		Connors, 	Schedule Conflict,		akiko1.html
+Akiko, 		Connors,	Carrying the Teaching,	akiko2.html
+Akiko, 		Kahren,		Journey in America,		akiko_k1.html
+Alisa,		Torres, 	Changing Karma,			alisa1.html
+Amber,		N, 			Continue On (Poem), 	amber1.html
+Andy, 		Kahren, 	On Karma, 				andy1.html
+Erika, 		Graetz,		Finding Strength,		erika1.html
+Hitomi, 	Dickey,		Family in America,		hitomi1.html
+Hitomi, 	Dickey,		Summer Miracle,			hitomi2.html
+Kazue, 		Hayes,		Words of Gratitude,		kazue1.html
+Kazue, 		Hayes,		Life and Family,		kazue2.html
+Kazue, 		Hayes,		Mothers,				kazue3.html
+Lance, 		Murray,		Tribulation,			lance1.html
+Maree, 		Doden,		Finding Buddhism,		maree1.html
+Mariko, 	Matchell,	Dear Keishu Sama,		mariko1.html
+Mika, 		Tanaka,		"Shinnyo En",			mika1.html
+Mikayo, 	Nantista,	Sesshin is Precious,	mikayo1.html	
+Mikayo, 	Nantista,	Gym Letter,				mikayo2.html
+Mikayo, 	Nantista,	Words of Gratitude,		mikayo3.html
+Reiko, 		Kawai,		Life Story,				reiko1.html
+Reiko, 		Kawai,		Dancers,				reiko2.html
+Sachiko, 	Levu,		Problem,				sachiko1.html
+Sophia, 	Dickey,		First Sesshin,			sophia1.html
+Sophia, 	Dickey,		Improving,				sophia2.html
+Toyoko, 	Dickey,		An Ode by an Ancient Coast Guard,	toyoko1.html
+Truoc, 		Tran,		Entering Shinnyo En,	truoc1.html
+Vicki, 		Moore,		On Renewal,				vicki1.html
+Yasou, 		Saito,		Mistakes,				yasou1.html

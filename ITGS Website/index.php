@@ -3,8 +3,8 @@
 <head>
 	<title>Carson Lineage</title>
 	<meta name="author" content="Eamonn Carson">
-	<meta name="keywords" content="Carson Lineage, Shinnyo En, Karen Carson, Flynn Carson" />
-	<meta name="description" content="Information on the Carson Lineage of Shinnyo Enn and translations of Buddhist Texts" />
+	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson" />
+	<meta name="description" content="General information about the Carson Lineage Website, and links to commonly visited places around the website." />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" type="text/css" href="/css/stylesheet.css" />
 	<link rel="stylesheet" type="text/css" href="/css/desktopStylesheet.css" />
