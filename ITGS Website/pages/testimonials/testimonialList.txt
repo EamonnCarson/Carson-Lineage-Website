@@ -9,20 +9,20 @@ Hitomi, 	Dickey,		Family in America,		hitomi1.html
 Hitomi, 	Dickey,		Summer Miracle,			hitomi2.html
 Kazue, 		Hayes,		Words of Gratitude,		kazue1.html
 Kazue, 		Hayes,		Life and Family,		kazue2.html
-Kazue, 		Hayes,		Mothers,				kazue3.html
-Lance, 		Murray,		Tribulation,			lance1.html
+Kazue, 		Hayes,		Mom,					kazue3.html
+Lance, 		Murray,		Negative Karma,			lance1.html
 Maree, 		Doden,		Finding Buddhism,		maree1.html
-Mariko, 	Matchell,	Dear Keishu Sama,		mariko1.html
+Mariko, 	Mitchell,	Dear Keishu Sama,		mariko1.html	//last name is different than what is listed
 Mika, 		Tanaka,		"Shinnyo En",			mika1.html
 Mikayo, 	Nantista,	Sesshin is Precious,	mikayo1.html	
-Mikayo, 	Nantista,	Gym Letter,				mikayo2.html
+Mikayo, 	Nantista,	Letter,					mikayo2.html
 Mikayo, 	Nantista,	Words of Gratitude,		mikayo3.html
 Reiko, 		Kawai,		Life Story,				reiko1.html
-Reiko, 		Kawai,		Dancers,				reiko2.html
+Reiko, 		Kawai,		Dancers,				reiko2.html		//fLO does not exist, delete name
 Sachiko, 	Levu,		Problem,				sachiko1.html
 Sophia, 	Dickey,		First Sesshin,			sophia1.html
 Sophia, 	Dickey,		Improving,				sophia2.html
 Toyoko, 	Dickey,		An Ode by an Ancient Coast Guard,	toyoko1.html
-Truoc, 		Tran,		Entering Shinnyo En,	truoc1.html
-Vicki, 		Moore,		On Renewal,				vicki1.html
-Yasou, 		Saito,		Mistakes,				yasou1.html
+Truoc, 		Tran,		My Wonderful Life,		truoc1.html
+Vicki, 		Moore,		First Visit to Oyasono,	vicki1.html
+Yasou, 		Saito,		Personal Experience,	yasou1.html
