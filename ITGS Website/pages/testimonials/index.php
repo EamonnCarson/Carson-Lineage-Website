@@ -30,7 +30,7 @@
 			</tr>
 			<?php
 				#Auto Generates table from file
-				$tableFile = fopen("testimonialList.txt", "r");
+				$tableFile = fopen("testimonialList.csv", "r");
 				while(!feof($tableFile)){
 					$line = fgets($tableFile);
 					
