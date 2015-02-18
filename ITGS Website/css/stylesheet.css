@@ -4,12 +4,31 @@ body {
 	background-color: black;
 }
 
+p {
+	font-size: 1em;
+}
+
+h3 {
+	font-size: 1.1em;
+}
+
+h2 {
+	font-size: 1.7em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
 #topnav {
 	z-index: 100;
 	background-color: black;
 	color: white;
 	width: 100%;
 }
+	#topnav ul {
+		list-style: none;
+	}
 	#topnav > ul {
 		float: right;
 		margin: 0px;
@@ -92,7 +111,6 @@ body {
 	background-color: white;
 	padding: 20px 0px 20px 0px;
 }
-
 	#content > * {
 		margin: 10px 30px 10px 30px;
 	}
@@ -104,6 +122,10 @@ body {
 	padding: 50px 0px 50px 0px;
 	text-align: center;
 }
+	#footer a {
+		color: white;
+		padding: 0px 20px 0px 5px;
+	}
 
 .float-clearing::after {
 	content: " ";

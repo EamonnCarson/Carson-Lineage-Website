@@ -16,13 +16,8 @@
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/header.html";?>
 
 	<div id="content">
-		<h2>Gohoshi Schedule</h2>
-		<p>Gohoshi activities performed to accrue good karma through honest action for the temple. This calandar displays temple cleaning and service events that our lineage has volunteered to participate in, and also gives information on who we need to attend.</p>
-		<p><a href="./gohoshi_schedule.php">Click here to go to the Gohoshi Schedule</a><p>
-
 		<h2>Winter Training Schedule</h2>
-		<p>Winter Training is a period where we meditate and refocus our practice. This calendar is seasonal (since Winter Training occurs around Janurary and February) so don't fret if it is blank for a few months at a time.</p>
-		<p><a href="./winter_training_schedule.php">Click here to go to the Gohoshi Schedule</a><p>
+		<iframe src="https://www.google.com/calendar/embed?src=503chnmi72rilk3r2g9v32qqjs%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="80%" height="90%" frameborder="0" scrolling="no"></iframe>
 	</div>
 
 	<!--Includes the footer file-->
