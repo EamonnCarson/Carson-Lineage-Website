@@ -6,6 +6,6 @@
 		padding: 10px;
 	}
 	#topnav > ul > li {
-		display: none;
+		float:none;
 	}
 }
