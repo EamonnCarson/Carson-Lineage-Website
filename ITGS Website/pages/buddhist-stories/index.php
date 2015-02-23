@@ -72,7 +72,7 @@
 
 				<tr>
 					<td>
-						<h3>The Hungry Spirits That Moggallana Encountered</h3>
+						<h3><a href="./stories/the-hungry-spirits/">The Hungry Spirits That Moggallana Encountered</a></h3>
 						<p>Translated by Yasou Saito</p>
 						<p>From Kangi-Sekai issue #208 (pages 90 to 95)</p>
 						<p>Summary: Many spirits stay earthbound due to their negative karma; the Buddha tells the stories of these spirits and of what deeds caused them to become hungry spirits.</p>

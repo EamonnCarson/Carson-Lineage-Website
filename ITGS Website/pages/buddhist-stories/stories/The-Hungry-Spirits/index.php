@@ -12,11 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="/css/mobileStylesheet.css" />
 	<style>
 		#content div.page {
-			display: none;
-			/*
-			min-height: 50em;
-			width: 40em;
-			max-width: 100%;*/
 			padding: 5%;
 			width: 80%;
 			min-height: 50em;
@@ -25,14 +20,13 @@
 			box-shadow: 10px 10px 6px #222222;
 			background-color: white;
 		}
-		#content #num1{
-			display: block;
-		}
 		#content > #reader {
 			width: 50em;
+			max-width: 100%;
 			padding: 2em 0 3em 0;
 			margin: 0 auto;
 			background-color: #333333;
+			font-size: 1.5em;
 		}
 		#reader h2 {
 			text-align: center;
@@ -57,7 +51,18 @@
 		}
 		#reader .button {
 			background-color: #444444;
-
+			-webkit-touch-callout: none;
+		    -webkit-user-select: none;
+		    -khtml-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		}
+		#reader .button:hover {
+			background-color: #545454;
+		}
+		#reader .button:active {
+			background-color: #292929;
 		}
 	</style>
 </head>
@@ -93,6 +98,76 @@
 
 	<!--Includes the footer file-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/footer.html";?>
+
+	<script>
+		var currentPage = 1;
+		var lastPage = 10;
+		var viewState = "article";
+
+		function prevPage(){
+			if(currentPage <= 1){
+				currentPage = 1;
+			}
+			else{
+				document.getElementById('num'+currentPage).style.display = "none";
+				currentPage--;
+				document.getElementById('num'+currentPage).style.display = "block";
+				document.getElementById('pagenumber').innerHTML = "Page "+currentPage;
+				window.open("#reader","_self");
+			}
+		}
+
+		function nextPage(){
+			if(currentPage >= lastPage){
+				currentPage = lastPage;
+			}
+			else{
+				document.getElementById('num'+currentPage).style.display = "none";
+				currentPage++;
+				document.getElementById('num'+currentPage).style.display = "block";
+				document.getElementById('pagenumber').innerHTML = "Page "+currentPage;
+				window.open("#reader","_self");
+			}
+		}
+
+		function pageView(){
+			if(viewState != "page"){
+				currentPage = 1;
+				for(var i = 2; i <= lastPage; i++){
+					document.getElementById('num'+i).style.display = "none";
+				}
+			}
+			viewState = "page";
+		}
+
+		function articleView(){
+			if(viewState != "article"){
+				currentPage = 1;
+				for(var i = 2; i <= lastPage; i++){
+					document.getElementById('num'+i).style.display = "block";
+				}
+			}
+			viewState = "article";
+		}
+
+		window.onload = function() {
+
+			pageView();
+
+			var prevButton = document.getElementById('prevbutton');
+			prevButton.onclick = function(){prevPage();}
+
+			var nextButton = document.getElementById('nextbutton');
+			nextButton.onclick = function() {nextPage();}
+
+			var pageViewButton = document.getElementById('pageviewbutton');
+			pageViewButton.onclick = function() {pageView();}
+
+			var articleViewButton = document.getElementById('articleviewbutton');
+			articleViewButton.onclick = function() {articleView();}
+			
+		}
+	</script>
 
 </body>
 </html>
