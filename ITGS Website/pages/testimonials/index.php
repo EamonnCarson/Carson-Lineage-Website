@@ -17,36 +17,77 @@
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/header.html";?>
 
 	<div id="content">
+		<h1>The Search Sanitization must be fixed</h1>
 		<h2>Testimonials</h2>
 			<p>This page contains links to testimonials by followers of Shinnyo En within the Carson Lineage. Testimonials can be poems, speeches, or narratives; however, all of them display the effect of Shinnyo Buddhism on follower's lives.</p>
 			<p>Select the testimonial you would like to read from the table below</p>
 			<p>If you do not speak english, <a href="TODO">(click here to read in Japanese)</a> or <a href="TODO">(click here to read in Mandarin)</a></p>
 		
-		<br>
-		<table>
-			<tr>
-				<th>Author</th>
-				<th>Testimonial</th>
-			</tr>
-			<?php
-				#Auto Generates table from file
-				$tableFile = fopen("testimonialList.csv", "r");
-				while(!feof($tableFile)){
-					$line = fgets($tableFile);
-					
-					$authorFirst = strtok($line, ",");
-					$authorLast = strtok(",");
-					$title = strtok(",");
-					$link = strtok(",");
+		<!--htmlspecialchars protects against XSS by modifying PHP_SELF-->
+		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="get">
+			Search for Name: <input type="text" name="searchTerm"><br>
+			Language: <input type="radio" name="language" value="English">English
+			<input type="radio" name="language" value="Japanese">日本語
+			<input type="radio" name="language" value="Mandarin">普通话<br>
+			<input type="submit"><br>
+		</form>
 
-					echo "\n<tr>";
-					echo "<td>$authorFirst $authorLast</td>";
-					echo "<td><a href=\"$link\">$title</a></td>";
-					echo "</tr>";
+		<?php
+			//connect to database
+			$servername = "localhost";
+			$username = "root";
+			$password = "erc-1997";
+			$database = "test";
+			$conn = new mysqli($servername, $username, $password, $database);
+			if ($conn->connect_error) {
+			    die("Connection failed: " . $conn->connect_error);
+			}
+
+			//issue commands
+			if(!empty($_GET)){
+				$search = cleanInput($_GET["searchTerm"]);
+				$language = getLanguage();
+				$sql = 	"SELECT * FROM testimonials  WHERE (
+				LOWER(firstName) LIKE LOWER('$search%') OR 
+				LOWER(lastName) LIKE LOWER('$search%'))
+				AND $language IS NOT NULL";
+			}
+
+			else{
+				$sql = "SELECT * FROM testimonials";
+			}
+			$result = mysqli_query($conn, $sql);
+			
+			//renders the table
+			if($result->num_rows > 0){
+				echo "<table><tr><td>Name</td><td>Title</td></tr>";
+				//this iterates through each row
+				while($row = $result->fetch_assoc()){
+					echo "<tr><td>".$row["firstName"]." ".$row["lastName"]."</td>";
+					echo "<td><a href=\"".$row["englishLink"]."\">".$row["title"]."</a></td></tr>"; 
 				}
-			?>
+				echo "</table>";
+			}
+			else{
+				echo "<p>We couldn't find anything that matched the search...</p>";
+			}
 
-		</table>
+			function cleanInput($var){
+				$var = trim($var);
+				$var = stripslashes($var);
+				$var = htmlspecialchars($var);
+				return $var;
+			}
+
+			function getLanguage(){
+				$language = cleanInput($_GET["language"]);
+				if($language == Japanese)
+					return "japaneseLink";
+				if($language == Mandarin)
+					return "chineseLink";
+				return "englishLink";
+			}
+		?>
 	</div>
 
 	<!--Includes the footer file-->
