@@ -1,15 +1,11 @@
 <!DOCTYPE HTML5>
 <html lang="en-US">
 <head>
-	<title>Carson Lineage Testimonials</title>
-	<meta name="author" content="Eamonn Carson">
+	<title>Testimonials</title>
 	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson, Testimonials, Followers, Members" />
 	<meta name="description" content="Contains testimonials written by members of the Carson Lineage describing their experiences with Shinnyo En and Buddhism." />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" href="/css/stylesheet.css" />
-	<link rel="stylesheet" type="text/css" href="/css/desktopStylesheet.css" />
-	<link rel="stylesheet" type="text/css" href="/css/midsizeStylesheet.css" />
-	<link rel="stylesheet" type="text/css" href="/css/mobileStylesheet.css" />
+	<!--Includes the meta information ( general stylesheets, icons, other constant information basically)-->
+	<?php require $_SERVER['DOCUMENT_ROOT'] . "/metadata.html";?>
 	<link rel="stylesheet" type="text/css" href="./css/tableStyle.css" />
 </head>
 <body>
@@ -24,12 +20,15 @@
 			<p>If you do not speak english, <a href="TODO">(click here to read in Japanese)</a> or <a href="TODO">(click here to read in Mandarin)</a></p>
 		
 		<!--htmlspecialchars protects against XSS by modifying PHP_SELF-->
-		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="get">
+		<form class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="get">
 			Search for Name: <input type="text" name="searchTerm"><br>
-			Language: <input type="radio" name="language" value="English">English
-			<input type="radio" name="language" value="Japanese">日本語
-			<input type="radio" name="language" value="Mandarin">普通话<br>
-			<input type="submit"><br>
+			Language: <input type="radio" name="language" value="English" 
+				<?php if(cleanInput($_GET["language"]) == "English"){ echo "checked";} ?>>English
+			<input type="radio" name="language" value="Japanese"
+				<?php if(cleanInput($_GET["language"]) == "Japanese"){ echo "checked";} ?>>日本語
+			<input type="radio" name="language" value="Mandarin"
+				<?php if(cleanInput($_GET["language"]) == "Mandarin"){ echo "checked";} ?>>普通话
+			<br><input type="submit" value="Search"><br>
 		</form>
 
 		<?php

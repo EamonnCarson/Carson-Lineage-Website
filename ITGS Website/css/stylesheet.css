@@ -1,7 +1,7 @@
 body {
 	margin: 0px;	
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	background-color: black;
+	background-color: white;
 }
 
 p {
@@ -20,7 +20,24 @@ h1 {
 	font-size: 2em;
 }
 
-#topnav {
+#top {
+	background: #45484d;
+	background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%);
+	background: -o-linear-gradient(top,  #45484d 0%,#000000 100%);
+	background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%);
+	background: linear-gradient(to bottom,  #45484d 0%,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
+
+	font-size: 1.5em;
+	background-color: #333333;
+	color: white;
+	padding: 1px 0;
+	text-align: center;
+}
+
+#topnav, #searchbar{
 	z-index: 100;
 	background-color: black;
 	color: white;
@@ -92,8 +109,6 @@ h1 {
 	z-index: 90;
 	display: block;
 	width: 100%;
-	background-color: white;
-	font-size: .8em;
 }
 	#breadcrumbs > ul{
 		margin: 0px;
@@ -101,18 +116,24 @@ h1 {
 	}
 	#breadcrumbs > ul > li {
 		display: inline-block;
+		float:left;
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
 	}
 	#breadcrumbs a {
 		color: white;
 		background-color: #444444;
-		padding: 0px 20px 0px 5px;
+		padding: 0px 20px 5px 5px;
 		text-decoration: none;
+		border-right: #222222 4px solid;
+		border-bottom-right-radius: 20px;
 	}
 
 #content {
 	display: block;
 	width: 100%;
-	background-color: white;
+	min-height: 70%;
+	/*background-color: white;*/
 	padding: 20px 0px 20px 0px;
 }
 
@@ -121,7 +142,15 @@ h1 {
 	}
 
 #footer {
-	background-color: black;
+	background: #000000;
+	background: -moz-linear-gradient(top,  #000000 0%, #45484d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#45484d));
+	background: -webkit-linear-gradient(top,  #000000 0%,#45484d 100%);
+	background: -o-linear-gradient(top,  #000000 0%,#45484d 100%);
+	background: -ms-linear-gradient(top,  #000000 0%,#45484d 100%);
+	background: linear-gradient(to bottom,  #000000 0%,#45484d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=0 );
+
 	color: white;
 	width: 100%;
 	padding: 50px 0px 50px 0px;
@@ -138,4 +167,18 @@ h1 {
 	display: block;
 	height: 0px;
 	clear: both;
+}
+
+.form {
+	border: 1px black solid;
+	background-color: #eeeeee;
+	padding: 1em;
+}
+
+#searchbar {
+	z-index: 100;
+	background-color: black;
+	color: white;
+	width: 90%;
+	padding: 10px 5% 10px 5%;
 }

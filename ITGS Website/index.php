@@ -2,20 +2,30 @@
 <html lang="en-US">
 <head>
 	<title>Carson Lineage</title>
-	<meta name="author" content="Eamonn Carson">
 	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson" />
 	<meta name="description" content="General information about the Carson Lineage Website, and links to commonly visited places around the website." />
+	<!--Includes the meta information ( general stylesheets, icons, other constant information basically)-->
+	<?php require $_SERVER['DOCUMENT_ROOT'] . "/metadata.html";?>
+	<!--
+	<meta name="author" content="Eamonn Carson">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="shortcut icon" href="/res/carsonLineageIcon.ico" type="image/x-icon"/>
+	<link rel="icon" href="/res/carsonLineageIcon.png" sizes="64x64">
 	<link rel="stylesheet" type="text/css" href="/css/stylesheet.css" />
 	<link rel="stylesheet" type="text/css" href="/css/desktopStylesheet.css" />
 	<link rel="stylesheet" type="text/css" href="/css/midsizeStylesheet.css" />
 	<link rel="stylesheet" type="text/css" href="/css/mobileStylesheet.css" />
+-->
 </head>
 <body>
 	<!--Includes the navbar file-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/header.html";?>
 
 	<div id="content">
+		<div>
+			<h2>Today's Sonouta</h2>
+			<?php ?>
+		</div>
 		<h2>Welcome</h2>
 			<p>Welcome to the Carson Lineage website. On this site you can view the <a href="TODO">Testimonials</a> from members of our lineage, read translated <a href="TODO">Shinnyo Texts</a>, see <a href="TODO">Temple Guidelines</a> and information, and check the schedules for <a href="TODO">Gohoshi</a>, <a href="TODO">Winter Training</a>, and other <a href="TODO">Shinyo activities</a>.</p>
 		<h2>Who are we?</h2>

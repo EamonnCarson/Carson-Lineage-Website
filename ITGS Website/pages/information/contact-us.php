@@ -1,7 +1,7 @@
 <!DOCTYPE HTML5>
 <html lang="en-US">
 <head>
-	<title>Information</title>
+	<title>Contact Us</title>
 	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson" />
 	<meta name="description" content="General information about the Carson Lineage Website, and links to commonly visited places around the website." />
 	<!--Includes the meta information ( general stylesheets, icons, other constant information basically)-->
@@ -12,17 +12,28 @@
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/header.html";?>
 
 	<div id="content">
-		<h2>Information</h2>
-		<p>This section of the site has information on a variety of topics related to Shinnyo en and the Carson Lineage</p>
-		<p>You can browse the topic pages listed below, or use the search above in order to search the site for a specific topic</p>
-		<h2>Topics</h2>
-		<h3>Lineage Information</h3>
-		<ul>
-			<li><a href="">About Us</a></li>
-			<li><a href="">Contact Us</a></li>
-			<li><a href="">Lineage Information</a></li>
-		</ul>
-
+		<h2>Contact Us</h2>
+		<p>You can use the following form to leave us a message, or you can email us at <a>TODO</a>.</p>
+		<div class="form">
+			<form method="post" action="contact-us-action.php">
+				<table>
+					<tr>
+						<td>Name:</td>
+						<td><input type="text" name="name"></td>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td><input type="email" name="email"></td>
+					</tr>
+					<tr>
+						<td>Subject:</td>
+						<td><input type="text" name="subject"></td>
+					</tr>
+				</table>
+				Message:<br><textarea name="message" rows="10" style="width:40%";></textarea></br>
+				<input type="submit">
+			</form>
+		</div>
 	</div>
 
 	<!--Includes the footer file-->

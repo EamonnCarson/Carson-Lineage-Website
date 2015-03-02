@@ -1,15 +1,11 @@
 <!DOCTYPE HTML5>
 <html lang="en-US">
 <head>
-	<title>Carson Lineage</title>
-	<meta name="author" content="Eamonn Carson">
+	<title>Winter Training Schedule</title>
 	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson" />
 	<meta name="description" content="General information about the Carson Lineage Website, and links to commonly visited places around the website." />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" href="/css/stylesheet.css" />
-	<link rel="stylesheet" type="text/css" href="/css/desktopStylesheet.css" />
-	<link rel="stylesheet" type="text/css" href="/css/midsizeStylesheet.css" />
-	<link rel="stylesheet" type="text/css" href="/css/mobileStylesheet.css" />
+	<!--Includes the meta information ( general stylesheets, icons, other constant information basically)-->
+	<?php require $_SERVER['DOCUMENT_ROOT'] . "/metadata.html";?>
 </head>
 <body>
 	<!--Includes the navbar file-->
