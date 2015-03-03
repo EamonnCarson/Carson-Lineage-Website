@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 	<title>Testimonials</title>
-	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson, Testimonials, Followers, Members" />
+	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson, Testimonials, Followers, Members, Proof" />
 	<meta name="description" content="Contains testimonials written by members of the Carson Lineage describing their experiences with Shinnyo En and Buddhism." />
 	<!--Includes the meta information ( general stylesheets, icons, other constant information basically)-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/metadata.html";?>

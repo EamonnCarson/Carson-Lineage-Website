@@ -2,8 +2,8 @@
 <html lang="en-US">
 <head>
 	<title>Schedules Index</title>
-	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson" />
-	<meta name="description" content="General information about the Carson Lineage Website, and links to commonly visited places around the website." />
+	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson, Calendar, Schedule, Dates, Times, Days, Gohoshi, Winter, Training, Events, Practice, Service, Volunteer" />
+	<meta name="description" content="Directory of calendars for Carson Lineage events such as Gohoshi and Winter Training." />
 	<!--Includes the meta information ( general stylesheets, icons, other constant information basically)-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/metadata.html";?>
 </head>
@@ -17,7 +17,7 @@
 		<p><a href="./gohoshi_schedule.php">Click here to go to the Gohoshi Schedule</a><p>
 
 		<h2>Winter Training Schedule</h2>
-		<p>Winter Training is a period where we meditate and refocus our practice. This calendar is seasonal (since Winter Training occurs around Janurary and February) so don't fret if it is blank for a few months at a time.</p>
+		<p>Winter Training is a period where we meditate and refocus our practice. This calendar is seasonal (since Winter Training occurs around January and February) so don't fret if it is blank for a few months at a time.</p>
 		<p><a href="./winter_training_schedule.php">Click here to go to the Gohoshi Schedule</a><p>
 	</div>
 

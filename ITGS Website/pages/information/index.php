@@ -2,8 +2,8 @@
 <html lang="en-US">
 <head>
 	<title>Information</title>
-	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson" />
-	<meta name="description" content="General information about the Carson Lineage Website, and links to commonly visited places around the website." />
+	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson, information, About Us, Contact, Division" />
+	<meta name="description" content="Directory for information about the Carson Lineage, contact and division information, and information about Shinnyo En and practice." />
 	<!--Includes the meta information ( general stylesheets, icons, other constant information basically)-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/metadata.html";?>
 </head>

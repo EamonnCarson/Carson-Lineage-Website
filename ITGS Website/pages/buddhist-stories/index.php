@@ -2,8 +2,8 @@
 <html lang="en-US">
 <head>
 	<title>Buddhist Stories</title>
-	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson" />
-	<meta name="description" content="General information about the Carson Lineage Website, and links to commonly visited places around the website." />
+	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson, buddhist, stories, translations, allegories, tales, Buddha, moral" />
+	<meta name="description" content="Directory dispaying Buddhist Stories and allegories taken translated from Kangi-Sekai magazine." />
 	<!--Includes the meta information ( general stylesheets, icons, other constant information basically)-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/metadata.html";?>
 	<link rel="stylesheet" type="text/css" href="./css/tableStyle.css" />
@@ -14,7 +14,7 @@
 
 	<div id="content">
 		<h2>Buddhist Texts</h2>
-			<p>This is a collection of Buddhist Allegories and Stories from Shinnyo En. The translations featured here are not officially by Shinnyo En — these texts were translated by Yasou Saito – but they should give an adequate approximation of the texts for non-academic purposes.</p>
+			<p>This is a collection of Buddhist Allegories and Stories from Shinnyo En originally published in <i>Kangi-Sekai</i> magazine. The translations featured here are not officially by Shinnyo En — these texts were translated by Yasou Saito – but they should give an adequate approximation of the texts for non-academic purposes.</p>
 			<table>
 				<tr>
 					<td><img src="/res/null.png" /></td>

@@ -2,8 +2,8 @@
 <html lang="en-US">
 <head>
 	<title>Winter Training Schedule</title>
-	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson" />
-	<meta name="description" content="General information about the Carson Lineage Website, and links to commonly visited places around the website." />
+	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson, Calendar, Schedule, Dates, Times, Days, Winter, Training, Events, Practice, Service, Volunteer" />
+	<meta name="description" content="Shows the schedule for Winter Training" />
 	<!--Includes the meta information ( general stylesheets, icons, other constant information basically)-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/metadata.html";?>
 </head>

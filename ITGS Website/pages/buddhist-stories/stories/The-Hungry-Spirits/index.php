@@ -6,64 +6,8 @@
 	<meta name="description" content="General information about the Carson Lineage Website, and links to commonly visited places around the website." />
 	<!--Includes the meta information ( general stylesheets, icons, other constant information basically)-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/metadata.html";?>
-	<style>
-		body {
-			background-color: #333333;
-		}
-		#content div.page {
-			padding: 5%;
-			width: 80%;
-			min-height: 50em;
-			margin: 0 auto;
-			border: 2px solid #555555;
-			box-shadow: 10px 10px 6px #222222;
-			background-color: white;
-		}
-		#content > #reader {
-			width: 50em;
-			max-width: 100%;
-			padding: 2em 0 3em 0;
-			margin: 0 auto;
-			background-color: #333333;
-			font-size: 1.5em;
-		}
-		#reader h2 {
-			text-align: center;
-			font-size: 1.5em;
-			color: white;
-		}
-		#reader table{
-			color: white;
-			margin: 1em auto;
-			text-align: center;
-		}
-		#reader #readernavcontrols {
-			width: 70%;
-		}
-		#reader #readerviewcontrols {
-			width: 50%;
-			font-size: .7em;
-		}
-		#reader td {
-			width: 33%;
-			padding: .5em 0;
-		}
-		#reader .button {
-			background-color: #444444;
-			-webkit-touch-callout: none;
-		    -webkit-user-select: none;
-		    -khtml-user-select: none;
-		    -moz-user-select: none;
-		    -ms-user-select: none;
-		    user-select: none;
-		}
-		#reader .button:hover {
-			background-color: #545454;
-		}
-		#reader .button:active {
-			background-color: #292929;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="/css/readerStyle.css" />
+
 </head>
 <body>
 	<!--Includes the navbar file-->
@@ -73,7 +17,8 @@
 		<div id="reader">
 			<h2>The Hungry Spirits That Moggallana Encountered</h2>
 			<?php
-				for($i=1; $i<=10; $i++){
+				$numPages = 10;
+				for($i=1; $i<=$numPages; $i++){
 					echo "\n<div class=\"page\" id=\"num$i\">\n";
 					require "$i.html";
 					echo "\n</div>";
