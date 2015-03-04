@@ -1,5 +1,5 @@
 body {
-	background-color: #333333;
+	background-color: #111111;
 }
 #content div.page {
 	padding: 5%;
@@ -15,7 +15,7 @@ body {
 	max-width: 100%;
 	padding: 2em 0 3em 0;
 	margin: 0 auto;
-	background-color: #333333;
+	background-color: #222222;
 	font-size: 1.5em;
 }
 #reader h2 {
@@ -53,4 +53,7 @@ body {
 }
 #reader .button:active {
 	background-color: #292929;
+}
+#printbutton{
+	display:none;
 }
