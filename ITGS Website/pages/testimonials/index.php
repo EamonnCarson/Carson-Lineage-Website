@@ -63,7 +63,8 @@
 				//this iterates through each row
 				while($row = $result->fetch_assoc()){
 					echo "<tr><td>".$row["firstName"]." ".$row["lastName"]."</td>";
-					echo "<td><a href=\"./content/".$row["englishLink"]."\">".$row["title"]."</a></td></tr>"; 
+
+					echo "<td><a href=\"./content/".$row[getLanguage()]."\">".$row["title"]."</a></td></tr>"; 
 				}
 				echo "</table>";
 			}

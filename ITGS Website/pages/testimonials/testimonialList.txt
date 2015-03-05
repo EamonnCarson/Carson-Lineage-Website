@@ -9,7 +9,7 @@ chineseLink varchar(255)
 );
 
 INSERT INTO testimonials Values('Akiko','Connors','Schedule Conflict','english/AkikoC-1/','japanese/AkikoC-1/',NULL);
-INSERT INTO testimonials Values('Akiko','Connors','Carrying the Teaching','english/AkikoC-2/','japanese/AkikoC-2/','mandarin/AkikoC-2/');
+INSERT INTO testimonials Values('Akiko','Connors','Carrying the Teaching','english/AkikoC-2/',NULL,'mandarin/AkikoC-2/');
 INSERT INTO testimonials Values('Akiko','Kahren','Journey in America','english/AkikoK-1/','japanese/AkikoK-1/',NULL);
 INSERT INTO testimonials Values('Alisa','Torres','Changing Karma','english/AlisaT-1/','japanese/AlisaT-1/',NULL);
 INSERT INTO testimonials Values('Amber','N','Continue On (Poem)','english/AmberN-1/',NULL,NULL);
@@ -34,5 +34,5 @@ INSERT INTO testimonials Values('Sophia','Dickey','First Sesshin','english/Sophi
 INSERT INTO testimonials Values('Sophia','Dickey','Improving','english/SophiaD-1/',NULL,NULL);
 INSERT INTO testimonials Values('Toyoko','Dickey','An Ode by an Ancient Coast Guard','english/ToyokoD-1/','japanese/ToyokoD-1/','mandarin/ToyokoD-1/');
 INSERT INTO testimonials Values('Truoc','Tran','My Wonderful Life','english/TruocT-1/',NULL,'mandarin/TruocT-1/');
-INSERT INTO testimonials Values('Vicki','Moore','First Visit to Oyasono','english/VickiM-1/','japanese/VickiM-1/','mandarin/VickiM-1/');
+INSERT INTO testimonials Values('Vicki','Moore','First Visit to Oyasono','english/VickiM-1/',NULL,'mandarin/VickiM-1/');
 INSERT INTO testimonials Values('Yasou','Saito','Personal Experience','english/YasouS-1/','japanese/YasouS-1/',NULL);

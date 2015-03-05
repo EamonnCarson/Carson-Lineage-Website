@@ -1,7 +1,7 @@
 <!DOCTYPE HTML5>
 <html lang="en-US">
 <head>
-	<title>Reiko Kawai Dancers</title>
+	<title>Andy Kahren On Karma</title>
 	<meta name="keywords" content="Carson Lineage, Shinnyo En, Buddhism, Karen Carson, Carson" />
 	<meta name="description" content="General information about the Carson Lineage Website, and links to commonly visited places around the website." />
 	<!--Includes the meta information ( general stylesheets, icons, other constant information basically)-->
@@ -23,8 +23,8 @@
 
 	<div id="content">
 		<div id="reader">
-			<h2>Dancers</h2>
-			<h3>by Reiko Kawai</h3>
+			<h2>On Karma</h2>
+			<h3>by Andy Kahren</h3>
 			<table id="readernavcontrols">
 				<tr>
 					<td class="button" id="topprevbutton">Previous</td>
