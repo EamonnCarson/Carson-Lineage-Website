@@ -48,34 +48,33 @@ function nextPage(){
 
 function pageView(){
 	if(viewState != "page"){
-		currentPage = 1;
 		for(var i = 1; i <= lastPage; i++){
-			if(i != currentPage) document.getElementById('num'+i).style.display = "none";
+			document.getElementById('num'+i).style.display = "none";
 		}
+		document.getElementById('num'+currentPage).style.display = "block";
+		prevButton.style.display = "table-cell";
+		topPrevButton.style.display = "table-cell";
+		nextButton.style.display = "table-cell";
+		topNextButton.style.display = "table-cell";
+		pageNumber.style.display = "table-cell";
+		topPageNumber.style.display = "table-cell";
+		viewState = "page";
 	}
-	prevButton.style.display = "table-cell";
-	topPrevButton.style.display = "table-cell";
-	nextButton.style.display = "table-cell";
-	topNextButton.style.display = "table-cell";
-	pageNumber.style.display = "table-cell";
-	topPageNumber.style.display = "table-cell";
-	viewState = "page";
 }
 
 function articleView(){
 	if(viewState != "article"){
-		currentPage = 1;
-		for(var i = 2; i <= lastPage; i++){
+		for(var i = 1; i <= lastPage; i++){
 			document.getElementById('num'+i).style.display = "block";
 		}
+		prevButton.style.display = "none";
+		topPrevButton.style.display = "none";
+		nextButton.style.display = "none";
+		topNextButton.style.display = "none";
+		pageNumber.style.display = "none";
+		topPageNumber.style.display = "none";
+		viewState = "article";
 	}
-	prevButton.style.display = "none";
-	topPrevButton.style.display = "none";
-	nextButton.style.display = "none";
-	topNextButton.style.display = "none";
-	pageNumber.style.display = "none";
-	topPageNumber.style.display = "none";
-	viewState = "article";
 }
 
 function toggleSearchBar(){

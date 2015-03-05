@@ -17,7 +17,7 @@
 		<h2>Testimonials</h2>
 			<p>This page contains links to testimonials by followers of Shinnyo En within the Carson Lineage. Testimonials can be poems, speeches, or narratives; however, all of them display the effect of Shinnyo Buddhism on follower's lives.</p>
 			<p>Select the testimonial you would like to read from the table below</p>
-			<p>If you do not speak english, <a href="TODO">(click here to read in Japanese)</a> or <a href="TODO">(click here to read in Mandarin)</a></p>
+			<p>If you do not speak english, <a href="./index.php?searchTerm=&language=Japanese">(click here to read in Japanese)</a> or <a href="./index.php?searchTerm=&language=Mandarin">(click here to read in Mandarin)</a></p>
 		
 		<!--htmlspecialchars protects against XSS by modifying PHP_SELF-->
 		<form class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="get">
@@ -63,7 +63,7 @@
 				//this iterates through each row
 				while($row = $result->fetch_assoc()){
 					echo "<tr><td>".$row["firstName"]." ".$row["lastName"]."</td>";
-					echo "<td><a href=\"".$row["englishLink"]."\">".$row["title"]."</a></td></tr>"; 
+					echo "<td><a href=\"./content/".$row["englishLink"]."\">".$row["title"]."</a></td></tr>"; 
 				}
 				echo "</table>";
 			}
