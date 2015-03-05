@@ -23,10 +23,11 @@ function prevPage(){
 			document.getElementById('num'+currentPage).style.display = "none";
 			currentPage--;
 			document.getElementById('num'+currentPage).style.display = "block";
-			pageNumber.innerHTML = "Page "+currentPage;
-			topPageNumber.innerHTML = "Page "+currentPage;
+			pageNumber.innerHTML = "Page "+currentPage+" of "+lastPage;
+			topPageNumber.innerHTML = "Page "+currentPage+" of "+lastPage;
 			window.open("#reader","_self");
 		}
+		toggleUseless();
 	}
 }
 
@@ -39,10 +40,11 @@ function nextPage(){
 			document.getElementById('num'+currentPage).style.display = "none";
 			currentPage++;
 			document.getElementById('num'+currentPage).style.display = "block";
-			pageNumber.innerHTML = "Page "+currentPage;
-			topPageNumber.innerHTML = "Page "+currentPage;
+			pageNumber.innerHTML = "Page "+currentPage+" of "+lastPage;
+			topPageNumber.innerHTML = "Page "+currentPage+" of "+lastPage;
 			window.open("#reader","_self");
 		}
+		toggleUseless();
 	}
 }
 
@@ -58,7 +60,29 @@ function pageView(){
 		topNextButton.style.display = "table-cell";
 		pageNumber.style.display = "table-cell";
 		topPageNumber.style.display = "table-cell";
+		pageNumber.innerHTML = "Page "+currentPage+" of "+lastPage;
+		topPageNumber.innerHTML = "Page "+currentPage+" of "+lastPage;
+		toggleUseless();
 		viewState = "page";
+	}
+}
+
+function toggleUseless(){
+	if(currentPage == lastPage){
+		nextButton.style.visibility = "hidden";
+		topNextButton.style.visibility = "hidden";
+	}
+	else {
+		nextButton.style.visibility = "visible";
+		topNextButton.style.visibility = "visible";
+	}
+	if(currentPage == 1){
+		prevButton.style.visibility = "hidden";
+		topPrevButton.style.visibility = "hidden";
+	}
+	else {
+		prevButton.style.visibility = "visible";
+		topPrevButton.style.visibility = "visible";
 	}
 }
 
