@@ -12,8 +12,14 @@
 	<!--Includes the navbar file-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/header.html";?>
 
+	<div id="breadcrumbs">
+		<ul class="float-clearing">
+			<li><a href="/">Home</a></li>
+			<li class="current"><a href="#content">Testimonials</a></li>
+		</ul>
+	</div>
+
 	<div id="content">
-		<h1>The Search Sanitization must be fixed</h1>
 		<h2>Testimonials</h2>
 			<p>This page contains links to testimonials by followers of Shinnyo En within the Carson Lineage. Testimonials can be poems, speeches, or narratives; however, all of them display the effect of Shinnyo Buddhism on follower's lives.</p>
 			<p>Select the testimonial you would like to read from the table below</p>
@@ -27,7 +33,7 @@
 			<input type="radio" name="language" value="Japanese"
 				<?php if(cleanInput($_GET["language"]) == "Japanese"){ echo "checked";} ?>>日本語
 			<input type="radio" name="language" value="Mandarin"
-				<?php if(cleanInput($_GET["language"]) == "Mandarin"){ echo "checked";} ?>>普通话
+				<?php if(cleanInput($_GET["language"]) == "Mandarin"){ echo "checked";} ?>>中文
 			<br><input type="submit" value="Search"><br>
 		</form>
 
@@ -39,6 +45,7 @@
 			$database = "test";
 			$conn = new mysqli($servername, $username, $password, $database);
 			if ($conn->connect_error) {
+				echo "We're sorry, but our database is not available.\n";
 			    die("Connection failed: " . $conn->connect_error);
 			}
 
@@ -51,7 +58,6 @@
 				LOWER(lastName) LIKE LOWER('$search%'))
 				AND $language IS NOT NULL";
 			}
-
 			else{
 				$sql = "SELECT * FROM testimonials";
 			}

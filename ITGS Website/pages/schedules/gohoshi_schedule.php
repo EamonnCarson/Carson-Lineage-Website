@@ -11,9 +11,17 @@
 	<!--Includes the navbar file-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/header.html";?>
 
+	<div id="breadcrumbs">
+		<ul class="float-clearing">
+			<li><a href="/">Home</a></li>
+			<li><a href="/pages/schedules">Schedules</a></li>
+			<li class="current"><a href="#content">Gohoshi Schedule</a></li>
+		</ul>
+	</div>
+
 	<div id="content">
 		<h2>Gohoshi Schedule</h2>
-		<iframe src="https://www.google.com/calendar/embed?title=Carson%20Lineage%20Gohoshi%20Calendar&amp;showTitle=0&amp;height=600&amp;wkst=1&amp;hl=en&amp;bgcolor=%23ffffff&amp;src=0r3n3kumkbuia6s8vgtoe2f408%40group.calendar.google.com&amp;color=%23A32929&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="90%" height="90%" frameborder="0" scrolling="no"></iframe>
+		<iframe src="https://www.google.com/calendar/embed?src=5h7pd9dl70fbftskt31u1l6e24%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="90%" height="80%" frameborder="0" scrolling="no"></iframe>
 	</div>
 
 	<!--Includes the footer file-->

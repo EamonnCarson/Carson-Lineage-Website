@@ -11,6 +11,13 @@
 	<!--Includes the navbar file-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/header.html";?>
 
+	<div id="breadcrumbs">
+		<ul class="float-clearing">
+			<li><a href="/">Home</a></li>
+			<li class="current"><a href="#content">Information</a></li>
+		</ul>
+	</div>
+
 	<div id="content">
 		<h2>Information</h2>
 		<p>This section of the site has information on a variety of topics related to Shinnyo en and the Carson Lineage</p>
@@ -18,9 +25,8 @@
 		<h2>Topics</h2>
 		<h3>Lineage Information</h3>
 		<ul>
-			<li><a href="">About Us</a></li>
-			<li><a href="">Contact Us</a></li>
-			<li><a href="">Lineage Information</a></li>
+			<li><a href="./pages/contact-us.php">Contact Us</a></li>
+			<li><a href="./pages/lineage-information.php">Lineage Information</a></li>
 		</ul>
 
 	</div>

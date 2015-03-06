@@ -11,9 +11,17 @@
 	<!--Includes the navbar file-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/header.html";?>
 
+	<div id="breadcrumbs">
+		<ul class="float-clearing">
+			<li><a href="/">Home</a></li>
+			<li><a href="/pages/schedules">Schedules</a></li>
+			<li class="current"><a href="#content">Winter Training Schedule</a></li>
+		</ul>
+	</div>
+
 	<div id="content">
 		<h2>Winter Training Schedule</h2>
-		<iframe src="https://www.google.com/calendar/embed?src=503chnmi72rilk3r2g9v32qqjs%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="80%" height="90%" frameborder="0" scrolling="no"></iframe>
+		<iframe src="https://www.google.com/calendar/embed?src=1g9tak8m38kor8b0q11sujpc28%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="90%" height="80%" frameborder="0" scrolling="no"></iframe>
 	</div>
 
 	<!--Includes the footer file-->

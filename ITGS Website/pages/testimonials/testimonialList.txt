@@ -9,7 +9,7 @@ chineseLink varchar(255)
 );
 
 INSERT INTO testimonials Values('Akiko','Connors','Schedule Conflict','english/AkikoC-1/','japanese/AkikoC-1/',NULL);
-INSERT INTO testimonials Values('Akiko','Connors','Carrying the Teaching','english/AkikoC-2/',NULL,'mandarin/AkikoC-2/');
+INSERT INTO testimonials Values('Akiko','Connors','Carrying the Teaching','english/AkikoC-2/',NULL,NULL);
 INSERT INTO testimonials Values('Akiko','Kahren','Journey in America','english/AkikoK-1/','japanese/AkikoK-1/',NULL);
 INSERT INTO testimonials Values('Alisa','Torres','Changing Karma','english/AlisaT-1/','japanese/AlisaT-1/',NULL);
 INSERT INTO testimonials Values('Amber','N','Continue On (Poem)','english/AmberN-1/',NULL,NULL);
@@ -21,7 +21,7 @@ INSERT INTO testimonials Values('Kazue','Hayes','Words of Gratitude','english/Ka
 INSERT INTO testimonials Values('Kazue','Hayes','Life and Family','english/KazueH-2/','japanese/KazueH-2/',NULL);
 INSERT INTO testimonials Values('Kazue','Hayes','Mom','english/KazueH-3/','japanese/KazueH-3/','mandarin/KazueH-3/');
 INSERT INTO testimonials Values('Lance','Murray','Negative Karma','english/LanceM-1/','japanese/LanceM-1/','mandarin/LanceM-1/');
-INSERT INTO testimonials Values('Maree','Doden','Finding Buddhism','english/MareeD-1/','japanese/MareeD-1/','mandarin/MareeD-1/');
+INSERT INTO testimonials Values('Maree','Doden','Finding Buddhism','english/MareeD-1/','japanese/MareeD-1/',NULL);
 INSERT INTO testimonials Values('Mariko','Mitchell','Dear Keishu Sama','english/MarikoM-1/','japanese/MarikoM-1/',NULL);
 INSERT INTO testimonials Values('Mika','Tanaka','Shinnyo En','english/MikaT-1/','japanese/MikaT-1/',NULL);
 INSERT INTO testimonials Values('Mikayo','Nantista','Sesshin is Precious','english/MikayoN-1/','japanese/MikayoN-1/','mandarin/MikayoN-1/');
@@ -32,7 +32,7 @@ INSERT INTO testimonials Values('Reiko','Kawai','Dancers','english/ReikoK-2/','j
 INSERT INTO testimonials Values('Sachiko','Levu','Problem','english/SachikoL-1/','japanese/SachikoL-1/','mandarin/SachikoL-1/');
 INSERT INTO testimonials Values('Sophia','Dickey','First Sesshin','english/SophiaD-1/','japanese/SophiaD-1/','mandarin/SophiaD-1/');
 INSERT INTO testimonials Values('Sophia','Dickey','Improving','english/SophiaD-1/',NULL,NULL);
-INSERT INTO testimonials Values('Toyoko','Dickey','An Ode by an Ancient Coast Guard','english/ToyokoD-1/','japanese/ToyokoD-1/','mandarin/ToyokoD-1/');
-INSERT INTO testimonials Values('Truoc','Tran','My Wonderful Life','english/TruocT-1/',NULL,'mandarin/TruocT-1/');
+INSERT INTO testimonials Values('Toyoko','Dickey','An Ode by an Ancient Coast Guard','english/ToyokoD-1/','japanese/ToyokoD-1/',NULL);
+INSERT INTO testimonials Values('Truoc','Tran','My Wonderful Life','english/TruocT-1/',NULL,NULL);
 INSERT INTO testimonials Values('Vicki','Moore','First Visit to Oyasono','english/VickiM-1/',NULL,'mandarin/VickiM-1/');
 INSERT INTO testimonials Values('Yasou','Saito','Personal Experience','english/YasouS-1/','japanese/YasouS-1/',NULL);

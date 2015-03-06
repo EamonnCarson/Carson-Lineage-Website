@@ -11,9 +11,17 @@
 	<!--Includes the navbar file-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/header.html";?>
 
+	<div id="breadcrumbs">
+		<ul class="float-clearing">
+			<li><a href="/">Home</a></li>
+			<li><a href="/pages/information">Information</a></li>
+			<li class="current"><a href="#content">Contact Us</a></li>
+		</ul>
+	</div>
+
 	<div id="content">
 		<h2>Contact Us</h2>
-		<p>You can use the following form to leave us a message, or you can email us at <a>TODO</a>.</p>
+		<p>You can use the following form to leave us a message, or you can email us at <a mailto:carsonlineagewebsite@gmail.com>carsonlineagewebsite@gmail.com</a>.</p>
 		<div class="form">
 			<form method="post" action="contact-us-action.php">
 				<table>

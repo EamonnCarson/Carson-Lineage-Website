@@ -13,6 +13,14 @@
 	<!--Includes the navbar file-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/header.html";?>
 
+	<div id="breadcrumbs">
+		<ul class="float-clearing">
+			<li><a href="/">Home</a></li>
+			<li><a href="/pages/buddhist-stories/">Buddhist Stories</a></li>
+			<li class="current"><a href="#reader">Reader</a></li>
+		</ul>
+	</div>
+
 	<div id="content">
 		<div id="reader">
 			<h2>The Hungry Spirits That Moggallana Encountered</h2>

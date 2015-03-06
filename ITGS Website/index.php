@@ -21,6 +21,12 @@
 	<!--Includes the navbar file-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/header.html";?>
 
+	<div id="breadcrumbs">
+		<ul class="float-clearing">
+			<li class="current"><a href="#content">Home</a></li>
+		</ul>
+	</div>
+
 	<div id="content">
 		<div id="sonouta">
 			<?php
@@ -94,16 +100,16 @@
 			?>
 		</div>
 		<h2>Welcome</h2>
-			<p>Welcome to the Carson Lineage website. On this site you can view the <a href="TODO">Testimonials</a> from members of our lineage, read translated <a href="TODO">Shinnyo Texts</a>, see <a href="TODO">Temple Guidelines</a> and information, and check the schedules for <a href="TODO">Gohoshi</a>, <a href="TODO">Winter Training</a>, and other <a href="TODO">Shinyo activities</a>.</p>
+			<p>Welcome to the Carson Lineage website. On this site you can view the <a href="/pages/testimonials/">Testimonials</a> from members of our lineage, read translated <a href="/pages/buddhist-stories/">Shinnyo Texts</a>, see <a href="/pages/information/">information</a> about our lineage, and check the schedules for <a href="/pages/schedules/gohoshi_schedule.php">Gohoshi</a> and <a href="/pages/schedules/winter_training_schedule.php">Winter Training</a>.</p>
 		<h2>Who are we?</h2>
-			<p>The Carson Lineage is a lineage of Shinnyo En, and our lineage parent is Karen Carson. We also happen to be the best lineage. <a href="TODO">Click here</a> for more detailed information about the lineage such as lineage number or our member roster</p>
+			<p>The Carson Lineage is a lineage of Shinnyo En, and our lineage parent is Karen Carson. We also happen to be the best lineage. <a href="/pages/information/pages/lineage-information.php">Click here</a> for more detailed information about the lineage such as lineage number or our member roster</p>
 		<h2>Site Information</h2>
 			<p>There are four main sections of the site:
 				<ul>
-					<li>The <a href="TODO">Testimonials</a> section allows you to read speeches and excerpts written by our members about how Shinnyo En has changed their lives, the nature of Shinnyo Buddhism, or other topics. Many of the translations are available in multiple languages, including <a href="TODO">English</a>, <a href="TODO">Japanese</a>, and <a href="TODO">Chinese</a>.</li>
-					<li>The <a href="TODO">Buddhist Stories</a> section contians translated Buddist short stories and allegories. These are not official translations, but they serve well enough to understand. These texts were all translated by Yasou Saitou, one of the members of our lineage.</li>
-					<li>The <a href="TODO">Schedules</a> section contains schedules pertaining to various Shinnyo En activities. We have the <a href="TODO">Gohoshi Schedules</a> and the <a href="TODO">Winter Training Schedule</a> on this site. Note that most of the other schedules are not hosted on this site; for these schedules we provide links, but logon information might be required. You can <a href="TODO">Contact us</a> if you need credentials to access these sites.</li>
-					<li>The <a href="TODO">Information</a> section contains <a href="TODO">information about our lineage</a> and information about temple practices. Hover over the "Information" heading on the navigation bar at the top of the page to see the general categories. Alternatively you can search our website for the topic you are interested in by clicking the magnifying glass icon on navigation bar of the page.</li>
+					<li>The <a href="/pages/testimonials/">Testimonials</a> section allows you to read speeches and excerpts written by our members about how Shinnyo En has changed their lives, the nature of Shinnyo Buddhism, or other topics. Many of the translations are available in multiple languages, including <a href="/pages/testimonials/index.php?searchTerm=&language=English">English</a>, <a href="/pages/testimonials/index.php?searchTerm=&language=Japanese">Japanese (日本語)</a>, and <a href="/pages/testimonials/index.php?searchTerm=&language=Mandarin">Mandarin (中文)</a>.</li>
+					<li>The <a href="/pages/buddhist-stories/">Buddhist Stories</a> section contians translated Buddist short stories and allegories. These are not official translations, but they serve well enough to understand. These texts were all translated by Yasou Saitou, one of the members of our lineage.</li>
+					<li>The <a href="/pages/schedules/">Schedules</a> section contains schedules pertaining to various Shinnyo En activities. We have the <a href="/pages/schedules/gohoshi_schedule.php">Gohoshi Schedules</a> and the <a href="/pages/schedules/winter_training_schedule.php">Winter Training Schedule</a> on this site. Note that most of the other schedules are not hosted on this site; for these schedules we provide links, but logon information might be required. You can <a href="/pages/information/pages/contact-us.php">Contact us</a> if you need credentials to access these sites.</li>
+					<li>The <a href="/pages/information/">Information</a> section contains <a href="/pages/information/pages/lineage-information.php">information about our lineage</a> and information about temple practices. Hover over the "Information" heading on the navigation bar at the top of the page to see the general categories. Alternatively you can search our website for the topic you are interested in by clicking the magnifying glass icon on navigation bar of the page.</li>
 				</ul>
 			</p>
 	</div>

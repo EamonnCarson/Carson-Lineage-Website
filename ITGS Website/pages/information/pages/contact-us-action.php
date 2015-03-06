@@ -11,6 +11,14 @@
 	<!--Includes the navbar file-->
 	<?php require $_SERVER['DOCUMENT_ROOT'] . "/header.html";?>
 
+	<div id="breadcrumbs">
+		<ul class="float-clearing">
+			<li><a href="/">Home</a></li>
+			<li><a href="/pages/information">Information</a></li>
+			<li class="current"><a href="#content">Contact Us</a></li>
+		</ul>
+	</div>
+
 	<div id="content">
 		<?php
 			//note: this will not work unless we setup an SMTP server in php.ini.
@@ -40,7 +48,7 @@
 				return $var;
 			}
 		?>
-		<br><p>If you'd like to send another message, or try again if yours did not send correctly, <a href="contact-us.php">click here</a>.</p>
+		<br><p>If you'd like to send another message, or try again if yours did not send correctly, <a href="./contact-us.php">click here</a>.</p>
 	</div>
 
 	<!--Includes the footer file-->
