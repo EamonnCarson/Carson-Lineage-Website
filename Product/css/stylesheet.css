@@ -1,0 +1,208 @@
+body {
+	margin: 0px;	
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: white;
+}
+
+p {
+	font-size: 1em;
+}
+
+h3 {
+	font-size: 1.1em;
+}
+
+h2 {
+	font-size: 1.7em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+#top {
+	background: #45484d;
+	background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%);
+	background: -o-linear-gradient(top,  #45484d 0%,#000000 100%);
+	background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%);
+	background: linear-gradient(to bottom,  #45484d 0%,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
+
+	font-size: 1.5em;
+	background-color: #333333;
+	color: white;
+	padding: 1px 0;
+	text-align: center;
+}
+
+#topnav, #searchbar{
+	z-index: 100;
+	background-color: black;
+	color: white;
+	width: 100%;
+}
+	#topnav ul {
+		list-style: none;
+	}
+	#topnav > ul {
+		float: right;
+		margin: 0px;
+		padding: 0px;
+	}
+	#topnav > ul > li {
+		display: block;
+		float: left;
+		position: relative;
+	}
+	#topnav a {
+		display: block;
+		color: white;
+		text-decoration: none;
+		margin: 0px;
+		padding: 10px;
+	}
+	#topnav #searchbar, #topnav #searchbutton, #topnav #menubutton {
+		display: block;
+		color: white;
+		margin: 0px;
+		padding: 10px;
+	}
+	#topnav > ul > li:hover {
+		background-color: #333333;
+	}
+
+	/*CSS menu */
+	#topnav > ul > li > ul {
+		z-index: 110;
+		display: none;
+		position: absolute;
+		background-color: #333333;
+		color: white;
+		width: 150px;
+		top: 45px;
+		left: 0px;
+		margin: 0px;
+		padding: 0px;
+	}
+		#topnav ul > li:hover > ul{
+			display: block;
+			background-color: #333333;
+		}
+		#topnav > ul > li > ul > li {
+
+		}
+		#topnav ul > li > ul > li > a {
+			display: block;
+			width: 130px;
+		}
+		#topnav ul > li > ul > li > a:hover {
+			background-color: #555555;
+		}
+
+#searchbar {
+	padding: 1em;
+}
+
+#breadcrumbs {
+	z-index: 90;
+	display: block;
+	width: 100%;
+}
+	#breadcrumbs > ul{
+		margin: 0px;
+		padding: 0px;
+	}
+	#breadcrumbs > ul > li {
+		display: inline-block;
+		float:left;
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+	}
+	#breadcrumbs li > a {
+		color: white;
+		background-color: #444444;
+		padding: 0px 20px 5px 5px;
+		text-decoration: none;
+		border-right: #222222 4px solid;
+		border-bottom-right-radius: 20px;
+	}
+	#breadcrumbs li.current > a{
+		color: white;
+		background-color: #666666;
+		padding: 0px 20px 5px 5px;
+		text-decoration: none;
+		border-right: #333333 4px solid;
+		border-bottom-right-radius: 20px;
+	}
+
+#content {
+	display: block;
+	width: 100%;
+	min-height: 70%;
+	/*background-color: white;*/
+	padding: 20px 0px 20px 0px;
+}
+
+	#content > * {
+		margin: 10px 30px 10px 30px;
+	}
+
+#footer {
+	background: #000000;
+	background: -moz-linear-gradient(top,  #000000 0%, #45484d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#45484d));
+	background: -webkit-linear-gradient(top,  #000000 0%,#45484d 100%);
+	background: -o-linear-gradient(top,  #000000 0%,#45484d 100%);
+	background: -ms-linear-gradient(top,  #000000 0%,#45484d 100%);
+	background: linear-gradient(to bottom,  #000000 0%,#45484d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=0 );
+
+	color: white;
+	width: 100%;
+	padding: 50px 0px 50px 0px;
+	text-align: center;
+}
+	#footer a {
+		color: white;
+		padding: 0px 20px 0px 5px;
+	}
+
+.float-clearing::after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+
+.form {
+	border: 1px black solid;
+	background-color: #eeeeee;
+	padding: 1em;
+}
+
+#searchbar {
+	z-index: 100;
+	background-color: black;
+	color: white;
+	width: 90%;
+	padding: 10px 5% 10px 5%;
+}
+
+#sonouta {
+	margin: 4em 0;
+}
+
+#sonouta-quote {
+	font-size: 1.6em;
+	text-align: center;
+	margin: auto 10%;
+}
+
+#sonouta-annotation {
+	font-size: .9em;
+	text-align: center;
+	margin: auto 10%;
+}

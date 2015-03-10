@@ -1,0 +1,11 @@
+@media only screen and (max-width: 800px) {
+	#topnav #searchbar {
+		display: none;
+		color: white;
+		margin: 0px;
+		padding: 10px;
+	}
+	#topnav > ul > li {
+		float:none;
+	}
+}
